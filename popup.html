@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="popup.css">
+  <script src="popup.js"></script>
+</head>
+<body>
+  <h1>到底是要下班了沒</h1>
+  <div class="block">
+    <label for="appt-time">上班時間: </label>
+    <input type="time" step="1" id="startTime" required>
+  </div>
+  <div class="block">
+    <label for="appt-time">工作時間: </label>
+    <select id="workTime" value="9">
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+      <option value="6">6</option>
+      <option value="7">7</option>
+      <option value="8">8</option>
+      <option value="9" selected="selected">9</option>
+      <option value="10">10</option>
+      <option value="11">11</option>
+      <option value="12">12</option>
+    </select>
+  </div>
+  <div class="btnArea">
+    <button id="convertButton">Go to work!!</button>
+    <button id="resetButton">Reset</button>
+  </div>
+  <div id="homeTime"></div>
+  <div id="homeTimeCountDown"></div>
+</body>
+</html>

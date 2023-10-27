@@ -1,0 +1,24 @@
+body {
+  min-width: 200px;
+  max-width: 250px;
+}
+
+h1 {
+  font-size: 20px;
+  text-align: center;
+}
+
+button {
+  width: 40%;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.block {
+  margin: 5px 0;
+}
+
+.btnArea {
+  display: flex;
+  justify-content: space-evenly;
+}
