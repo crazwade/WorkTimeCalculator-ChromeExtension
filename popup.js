@@ -15,19 +15,13 @@ document.addEventListener('DOMContentLoaded', function() {
     if (data.startTime) {
       startTime.value = data.startTime;
       extraWorkTime.value = data.extraWorkTime;
-      let getHour = ((startTime.value).split('.')[0]).split(':');
-      homeTime.textContent = `下班時間 ${Number(getHour[0]) + Number(workTime.value) + Number(extraWorkTime.value)}  : ${getHour[1]} : ${getHour[2]}`;
-      updateHomeTime();
-    }
-    if (data.workTime) {
       workTime.value = data.workTime;
+      updateHomeTime();
     }
   });
 
   // 開始計算工時和下班時間
   workButton.addEventListener('click', function() {
-    let getHour = ((startTime.value).split('.')[0]).split(':');
-    homeTime.textContent = `下班時間 ${Number(getHour[0]) + Number(workTime.value) + Number(extraWorkTime.value)} : ${getHour[1]} : ${getHour[2]}`;
     updateHomeTime();
 
     // 儲存使用者的設定
@@ -75,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function() {
       }
 
       homeTimeCountDown.textContent = `還剩下 ${diffHrs} 小時 ${diffMins} 分鐘 ${diffSecs} 秒`;
-      homeTime.textContent = `下班時間 ${Number(getHour[0]) + Number(workTime.value) + Number(extraWorkTime.value)} : ${getHour[1]} : ${getHour[2]}`;
+      homeTime.textContent = `下班時間 ${endHours} : ${getHour[1]} : ${getHour[2]}`;
 
       // 每秒更新倒數時間
       setTimeout(updateHomeTime, 1000);
