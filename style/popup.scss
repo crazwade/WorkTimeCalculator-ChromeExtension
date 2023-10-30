@@ -1,0 +1,67 @@
+$primary-color: #315cfd;
+$secondary-color: gray;
+$transition-speed: 0.3s;
+
+body {
+  min-width: 200px;
+  max-width: 250px;
+}
+
+h1 {
+  font-size: 20px;
+  text-align: center;
+}
+
+button {
+  width: 45%;
+  height: 30px;
+  padding: 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  background: white;
+  font-size: 1.2em;
+  font-weight: 550;
+  font-family: 'Montserrat', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#resetButton {
+  border-color: $secondary-color;
+
+  &:hover {
+    background: $secondary-color;
+    color: white;
+  }
+}
+
+#workButton {
+  border-color: $primary-color;
+  color: $primary-color;
+
+  &:hover {
+    color: white;
+    background: $primary-color;
+  }
+}
+
+.block {
+  margin: 5px auto;
+}
+
+.btnArea {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  justify-content:center;
+  align-items:center;
+
+  div {
+    margin:6px auto;
+  }
+}

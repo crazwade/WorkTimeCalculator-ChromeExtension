@@ -1,8 +1,8 @@
 {
   "manifest_version": 3,
   "name": "回家計時器",
-  "version": "1.0",
-  "description": "I wanna go home :(",
+  "version": "1.1",
+  "description": "這是一個 Google Chrome 擴充功能，可以幫助使用者計算下班時間以及倒數下班，可以充分的感覺到時間的流逝感",
   "permissions": [
     "activeTab",
     "storage"
