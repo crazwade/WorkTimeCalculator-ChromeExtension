@@ -2,7 +2,7 @@
 
 這是一個 Google Chrome 擴充功能，可以幫助使用者計算他們的上班時間和下班時間。
 
-![image](https://github.com/crazwade/WorkTimeCalculator-ChromeExtension/assets/31063679/f6b16494-624a-405e-bb28-84b109d4fd0d)
+![image](https://github.com/crazwade/WorkTimeCalculator-ChromeExtension/assets/31063679/10046655-46a2-455e-b5ef-3cef855617ae)
 
 ## 功能
 
