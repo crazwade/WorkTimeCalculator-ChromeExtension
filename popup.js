@@ -10,10 +10,11 @@ document.addEventListener('DOMContentLoaded', function() {
   /** 捕時數 */
   var extraWorkTime = document.getElementById('extraWorkTime');
 
-  // 取得儲存的設定
+  // 如果關閉畫面後重新打開取得儲存的設定
   chrome.storage.sync.get(['startTime', 'workTime', 'extraWorkTime'], function(data) {
     if (data.startTime) {
       startTime.value = data.startTime;
+      extraWorkTime.value = data.extraWorkTime;
       let getHour = ((startTime.value).split('.')[0]).split(':');
       homeTime.textContent = `下班時間 ${Number(getHour[0]) + Number(workTime.value) + Number(extraWorkTime.value)}  : ${getHour[1]} : ${getHour[2]}`;
       updateHomeTime();
