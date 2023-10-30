@@ -13,7 +13,7 @@
   </div>
   <div class="block">
     <label for="appt-time">工作時間: </label>
-    <select id="workTime" value="9">
+    <select id="workTime">
       <option value="1">1</option>
       <option value="2">2</option>
       <option value="3">3</option>
@@ -28,11 +28,24 @@
       <option value="12">12</option>
     </select>
   </div>
+  <div class="block">
+    <label for="appt-time">是否需要捕時數: </label>
+    <select id="extraWorkTime">
+      <option value="0" selected="selected">0</option>
+      <option value="1">1</option>
+      <option value="2">2</option>
+      <option value="3">3</option>
+      <option value="4">4</option>
+      <option value="5">5</option>
+    </select>
+  </div>
   <div class="btnArea">
-    <button id="convertButton">Go to work!!</button>
+    <button id="workButton">Work!!</button>
     <button id="resetButton">Reset</button>
   </div>
-  <div id="homeTime"></div>
-  <div id="homeTimeCountDown"></div>
+  <div class="middle">
+    <div id="homeTime"></div>
+    <div id="homeTimeCountDown"></div>
+  </div>
 </body>
 </html>
